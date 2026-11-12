@@ -1,0 +1,7 @@
+node_modules/
+.env
+output/
+.invoice-cache/
+examples/invoices/
+*.log
+.DS_Store

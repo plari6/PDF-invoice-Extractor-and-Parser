@@ -1,0 +1,40 @@
+{
+  "name": "pdf-invoice-extractor",
+  "version": "1.0.0",
+  "description": "Node.js CLI that turns messy PDF invoices into validated JSON, Excel and accounting CSV: line items, tax IDs, VAT and totals, with Gemini, multi-model fallback and a no-AI rules engine.",
+  "type": "module",
+  "bin": {
+    "invoice-extractor": "bin/invoice-extractor.js"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test --test-reporter=spec \"test/**/*.test.js\"",
+    "demo": "node bin/invoice-extractor.js demo",
+    "doctor": "node bin/invoice-extractor.js doctor --ping",
+    "serve": "node bin/invoice-extractor.js serve",
+    "build:samples": "node examples/build-samples.js"
+  },
+  "engines": {
+    "node": ">=20.16"
+  },
+  "keywords": [
+    "invoice",
+    "pdf",
+    "invoice-parser",
+    "ocr",
+    "accounts-payable",
+    "gemini",
+    "excel",
+    "vat",
+    "cli",
+    "llm-fallback"
+  ],
+  "author": "plari6",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^15.1.0",
+    "dotenv": "^18.0.10",
+    "exceljs": "^4.4.0",
+    "pdf-parse": "^2.4.5"
+  }
+}

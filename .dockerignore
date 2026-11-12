@@ -1,0 +1,7 @@
+node_modules
+output
+.invoice-cache
+examples/invoices
+.env
+.git
+test
